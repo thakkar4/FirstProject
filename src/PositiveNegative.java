@@ -18,7 +18,14 @@ public class PositiveNegative {
         scan.close();
         
         // Displaying the number 
-        System.out.println("The number entered by user: "+num);
+        if (num>=0) {
+        System.out.println(num+ " The number is positive ");
+        }
+        else {
+        	
+        	System.out.println(num+ " The number is Negative ");
+        }
+        
     
 
 	}

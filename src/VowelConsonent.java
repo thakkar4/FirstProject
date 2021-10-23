@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class VowelConsonent {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		boolean isVowel = false;
+	    boolean isVowel = false;
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Enter a character: ");
@@ -27,7 +27,7 @@ public class VowelConsonent {
 		case 'O':
 		case 'U':	isVowel = true;
 		
-		}
+		} 
 		
 		if(isVowel == true) {
 			
@@ -35,16 +35,22 @@ public class VowelConsonent {
 			
 		}
 			
-			else if(isVowel==false){
+			else if(ch>='a' && ch<='z'){
 				
 				System.out.println(ch+ " is a Constonant");
 				
 			}
+		
+			else if (ch>='A' && ch<='Z') {
+				
+				System.out.println(ch+ " is a Constonant");
+			}
 				else {
 					
 					System.out.println(ch+ " is not Vowel or Constonant");
-				}
-			
+				}	
 
-	}
+	} 
+	
+	
 }
